@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_28448fa63e479da768b18f26c2c8b0fd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; 
+            bottom: 10px; left: 10px; width: 300px; height: auto; 
+            background-color: white; border: 2px solid black; 
+            z-index: 1000; padding: 10px; font-size: 12px;">
+    <h4>Detalii Pachet</h4>
+    <ul>
+        <li><b>Zbor:</b> 885 EUR/persoană (dus/retur cu Turkish Airlines)</li>
+        <li><b>Cazare:</b> 5075 EUR (Beach Pool Villa, All Inclusive, transfer inclus)</li>
+        <li><b>Pachet 2 persoane:</b> 6845 EUR (zbor, cazare, transfer)</li>
+    </ul>
+</div>
+    
+            <div class="folium-map" id="map_28448fa63e479da768b18f26c2c8b0fd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_28448fa63e479da768b18f26c2c8b0fd = L.map(
+                "map_28448fa63e479da768b18f26c2c8b0fd",
+                {
+                    center: [24.373, 49.79755],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_108d7bda5c602d4b88741c71910c548d = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var marker_98ace4cbf5eabe8a900ab50331e08d33 = L.marker(
+                [44.5705, 26.0858],
+                {}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var icon_ebddfdbd14f6dbb5f68b1866e04f4b90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98ace4cbf5eabe8a900ab50331e08d33.setIcon(icon_ebddfdbd14f6dbb5f68b1866e04f4b90);
+        
+    
+        var popup_30d51c025ae6f042adea77ea74023727 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_6aff6a04a8d7d3d15c378b39f3da1882 = $(`<div id="html_6aff6a04a8d7d3d15c378b39f3da1882" style="width: 100.0%; height: 100.0%;">OTP: București</div>`)[0];
+            popup_30d51c025ae6f042adea77ea74023727.setContent(html_6aff6a04a8d7d3d15c378b39f3da1882);
+        
+
+        marker_98ace4cbf5eabe8a900ab50331e08d33.bindPopup(popup_30d51c025ae6f042adea77ea74023727)
+        ;
+
+        
+    
+    
+            marker_98ace4cbf5eabe8a900ab50331e08d33.bindTooltip(
+                `<div>
+                     București
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1cabf8e8e610f797d1377c07231899f4 = L.marker(
+                [4.1755, 73.5093],
+                {}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var icon_82e0e71d39123c3127fbd2ac3c3bea99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1cabf8e8e610f797d1377c07231899f4.setIcon(icon_82e0e71d39123c3127fbd2ac3c3bea99);
+        
+    
+        var popup_4994b7c4ce5bd4da7430e303a8772938 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c966161ce5d8f5ae39dbfe2f576f9a8 = $(`<div id="html_4c966161ce5d8f5ae39dbfe2f576f9a8" style="width: 100.0%; height: 100.0%;">MLE: Malé</div>`)[0];
+            popup_4994b7c4ce5bd4da7430e303a8772938.setContent(html_4c966161ce5d8f5ae39dbfe2f576f9a8);
+        
+
+        marker_1cabf8e8e610f797d1377c07231899f4.bindPopup(popup_4994b7c4ce5bd4da7430e303a8772938)
+        ;
+
+        
+    
+    
+            marker_1cabf8e8e610f797d1377c07231899f4.bindTooltip(
+                `<div>
+                     Malé
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_38f6496bb291c82298b450a845a0bbfc = L.polyline(
+                [[44.5705, 26.0858], [4.1755, 73.5093]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            poly_line_38f6496bb291c82298b450a845a0bbfc.bindTooltip(
+                `<div>
+                     Zbor internațional dus/retur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d0b9fab84254792f9d39e3ce19240eba = L.marker(
+                [25.373, 49.79755],
+                {}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var icon_17c0cfc1eba81c80e9f2d019421064cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_d0b9fab84254792f9d39e3ce19240eba.setIcon(icon_17c0cfc1eba81c80e9f2d019421064cd);
+        
+    
+            marker_d0b9fab84254792f9d39e3ce19240eba.bindTooltip(
+                `<div>
+                     <b>Zbor dus</b><br>Turkish Airlines 1046<br>Airbus A330-200<br>21:45 București - 23:15 Istanbul<br>1 oră 30 minute, Escală: 2 ore 55 minute<br>Turkish Airlines 734<br>Airbus A330-300<br>02:10 Istanbul - 12:15 Malé<br>8 ore 5 minute<br>Tarif avion: 885 EUR/persoană
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_001f5b832a6eb1d64e48940b66aeb653 = L.marker(
+                [23.373, 49.79755],
+                {}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var icon_9a6a69eab310ee2caea161233f8a05fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_001f5b832a6eb1d64e48940b66aeb653.setIcon(icon_9a6a69eab310ee2caea161233f8a05fb);
+        
+    
+            marker_001f5b832a6eb1d64e48940b66aeb653.bindTooltip(
+                `<div>
+                     <b>Zbor retur</b><br>Turkish Airlines 735<br>Airbus A330-300<br>22:15 Malé - 04:40 Istanbul<br>8 ore 25 minute, Zbor de noapte<br>Escală: 2 ore 10 minute<br>Turkish Airlines 1043<br>Airbus A330-200<br>06:50 Istanbul - 08:10 București<br>1 oră 20 minute<br>Tarif avion: 885 EUR/persoană
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9fe5b178ea9524d9558b10886afe26a3 = L.polyline(
+                [[4.1755, 73.5093], [4.1186399, 72.9377975]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            poly_line_9fe5b178ea9524d9558b10886afe26a3.bindTooltip(
+                `<div>
+                     Zbor cu hidroavionul<br>Transfer inclus în pachet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d09d790b316e44ce2aa35c225bbccb85 = L.marker(
+                [4.147069950000001, 73.22354874999999],
+                {}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var icon_59dbc920114501a8a1bcf20a5ad1edc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "plane", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_d09d790b316e44ce2aa35c225bbccb85.setIcon(icon_59dbc920114501a8a1bcf20a5ad1edc5);
+        
+    
+            marker_d09d790b316e44ce2aa35c225bbccb85.bindTooltip(
+                `<div>
+                     Hidroavion Malé - Hotel Ananea Madivaru Maldives<br>Durată: aprox. 30 minute<br>Transfer inclus în pachet
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cabeb72498d7b98793cf6efba0ea8375 = L.marker(
+                [4.1186399, 72.9377975],
+                {}
+            ).addTo(map_28448fa63e479da768b18f26c2c8b0fd);
+        
+    
+            var icon_2bf43e999e552b953d534dc39f74923b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_cabeb72498d7b98793cf6efba0ea8375.setIcon(icon_2bf43e999e552b953d534dc39f74923b);
+        
+    
+        var popup_56535a74f542bf4fbfa408066888a94d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f3bb71cf150199fb81cf853cae045b6b = $(`<div id="html_f3bb71cf150199fb81cf853cae045b6b" style="width: 100.0%; height: 100.0%;"><a href='https://www.ananea.com/en_en/ananea-madivaru-maldiven-de/' target='_blank'>Hotel Ananea Madivaru Maldives</a><br>Tarif cazare: 5075 EUR<br>Tip cameră: Beach Pool Villa<br>All Inclusive, transfer cu hidroavion inclus</div>`)[0];
+            popup_56535a74f542bf4fbfa408066888a94d.setContent(html_f3bb71cf150199fb81cf853cae045b6b);
+        
+
+        marker_cabeb72498d7b98793cf6efba0ea8375.bindPopup(popup_56535a74f542bf4fbfa408066888a94d)
+        ;
+
+        
+    
+    
+            marker_cabeb72498d7b98793cf6efba0ea8375.bindTooltip(
+                `<div>
+                     Hotel Ananea Madivaru Maldives<br>Tarif cazare: 5075 EUR<br>All Inclusive, Beach Pool Villa<br>Transfer inclus
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
